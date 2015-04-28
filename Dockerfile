@@ -4,7 +4,7 @@ MAINTAINER arturmkrtchyan
 
 ENV ZOOKEEPER_VERSION="3.4.6"
 
-RUN apt-get update && apt-get install -y unzip openjdk-8-jdk wget curl git docker.io jq
+RUN apt-get update && apt-get install -y unzip openjdk-8-jre wget curl jq
 
 ADD download-zookeeper.sh /tmp/download-zookeeper.sh
 RUN /tmp/download-zookeeper.sh
